@@ -25,7 +25,7 @@ const AUDIO = {
 		}
 
 		this.player.volume = 0.3;
-		this.player.setAttribute('onended', 'pause_music()');
+		this.player.setAttribute('onended', 'play_pause()');
 	},
 	start_music(music) {
 		this.player.src = `assets/audio/${music}`;
