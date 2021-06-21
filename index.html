@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>German Military Marches</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/germany.css">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<script src="https://kit.fontawesome.com/5bb1d8cb3e.js"></script>
+	<meta name="theme-color" content="#011936">
+	<meta name="keywords" content="reichtangle, germany, german, prussia, empire, wilhelm, radio, rhein, preussen, preußen, preußenland, yorckscher, hohenfriedberger, westerwald, schwarzbraun, königgrätzer">
+	<meta content="@BrunoBonavigo" name="twitter:site"/>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@BrunoBonavigo">
+	<meta name="twitter:creator" content="@BrunoBonavigo">
+	<meta property="og:site_name" content="Bruno Bonavigo">
+	<meta property="og:locale" content="pt_BR"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="German Military Marches"/>
+	<meta property="og:description" content="Some German Military Marches, from before and after the unification."/>
+	<meta property="og:url" content="https://bonavigo.net/germanradio"/>
+	<meta property="og:image" content="https://bonavigo.net/germanradio/assets/img/ogimage.png"/>
+</head>
+<body class="container">
+	<section class="loader" id="loader">
+		<i class="fas fa-sync"></i>
+	</section>
+	<section class="radio_box display-none" id="player">
+		<ul class="music_list custom-scroll">
+			<li data-music="preußens_gloria.mp3"><span class="list_option">Preußens Gloria</span></li>
+			<li data-music="schwarzbraun.mp3"><span class="list_option">Schwarzbraun ist die Haselnuss</span></li>
+			<li data-music="westerwald.mp3"><span class="list_option">Westerwaldlied</span></li>
+			<li data-music="yorckscher.mp3"><span class="list_option">Yorckscher Marsch</span></li>
+			<li data-music="königgrätzer.mp3"><span class="list_option">Königgrätzer Marsch</span></li>
+			<li data-music="hohenfriedberger.mp3"><span class="list_option">Der Hohenfriedberger</span></li>
+			<li data-music="rhein.mp3"><span class="list_option">Die Wacht am Rhein</span></li>
+		</ul>
+		<div class="buttons_radio">
+			<button type="button" class="btn player_bg" id="volume_down"><i class="fas fa-volume-down"></i></button>
+			<button type="button" class="btn player_bg" id="button_play_pause"><i class="fas fa-play"></i></button>
+			<button type="button" class="btn player_bg" id="volume_up"><i class="fas fa-volume-up"></i></button>
+		</div>
+		<audio class="audio_player" src="" data-without="true"></audio>
+	</section>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
