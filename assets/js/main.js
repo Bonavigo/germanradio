@@ -28,6 +28,7 @@ const AUDIO = {
 		this.player.setAttribute('onended', 'play_pause()');
 	},
 	start_music(music) {
+		AUDIO.play_pause();
 		this.player.src = `assets/audio/${music}`;
 		this.player.dataset.without = 'false';
 		AUDIO.play_pause();
