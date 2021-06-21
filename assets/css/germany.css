@@ -1,0 +1,160 @@
+:root {
+	--empire-flag-black: #000000;
+	--empire-flag-white: #FFFFFF;
+	--empire-flag-red: #DD0000;
+
+	--body-background: #011936;
+	--player-background: #F6F7EB;
+	--music-list-background: #FFFFFF;
+	--btn-player: #7C898B;
+	--btn-player-text: #FFFFFF;
+
+	--scroll-track: #f1f1f1;
+	--scroll-thumb: #DCDCDC;
+
+	--white: #FFFFFF;
+	--black: #000000;
+	--grey: #898989;
+	--hovered-grey: #B7B7B7;
+}
+body {
+	height: 100vh;
+	background: var(--body-background);
+	font-family: Roboto;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.loader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+	animation-name: loading;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+.loader i {
+	color: var(--player-background);
+}
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.display-none {
+	display: none !important;
+}
+.german_empire_flag {
+	background: linear-gradient(to bottom, var(--empire-flag-black) 0%, var(--empire-flag-black) 33.33%, var(--empire-flag-white) 0%, var(--empire-flag-white) 66.66%, var(--empire-flag-red) 0%);
+}
+.radio_box {
+	min-height: 320px;
+	height: auto;
+	min-width: 300px;
+	width: auto;
+	padding: 1.5em;
+	background: var(--player-background);
+	border-radius: 10px;
+	box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.music_list {
+	background: var(--music-list-background);
+	border: 3px var(--grey) solid;
+	border-radius: 5px;
+	overflow: overlay;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 14em;
+}
+.music_list li {
+	background: var(--music-list-background);
+	user-select: none;
+	cursor: pointer;
+	padding: 0.5em 0;
+	transition: 0.3s;
+}
+.music_list li:hover {
+	background: var(--hovered-grey);
+	transition: 0.3s;
+}
+.list_option {
+	margin: 0 1.5em;
+}
+.buttons_radio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5em 0 0 0;
+}
+.btn {
+	padding: 1em 1.5em;
+	color: var(--btn-player-text);
+	user-select: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+.btn:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+.btn i {
+	font-size: 1.5em;
+}
+.player_bg {
+	background: var(--btn-player);
+}
+.custom-scroll::-webkit-scrollbar {
+	width: 3px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+	background: var(--scroll-track);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+	background: var(--scroll-thumb);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+	background: var(--scroll-thumb);
+}
+.audio_player {
+	display: none;
+}
+@media (max-width: 576px) {
+	.radio_box {
+		transform: scale(0.6);
+	}
+}
+@media (min-width: 577px) and (max-width: 768px) {
+	.radio_box {
+		transform: scale(0.7);
+	}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+	.radio_box {
+		transform: scale(0.8);
+	}
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+	.radio_box {
+		transform: scale(0.9);
+	}
+}
+@media (min-width: 1201px) and (min-width: 1400px) {
+	.radio_box {
+		transform: scale(1);
+	}
+}
