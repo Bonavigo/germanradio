@@ -29,7 +29,7 @@ const AUDIO = {
 	},
 	start_music(music) {
 		this.player.dataset.status = 'paused';
-		this.player.paused();
+		this.player.pause();
 		this.player.src = `assets/audio/${music}`;
 		this.player.dataset.without = 'false';
 		AUDIO.play_pause();
