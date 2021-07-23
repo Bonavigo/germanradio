@@ -69,7 +69,7 @@ body {
 	background: var(--music-list-background);
 	border: 3px var(--grey) solid;
 	border-radius: 5px;
-	overflow: overlay;
+	overflow: auto;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
